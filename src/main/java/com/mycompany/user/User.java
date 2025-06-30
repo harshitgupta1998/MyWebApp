@@ -14,7 +14,7 @@ public class User {
     private String password;
     @Column(length = 15,nullable = false,name="first_name")
     private String firstName;
-
+    private Boolean enabled;
     @Column(nullable = false,length = 40,name="last_name")
     private String lastName;
 

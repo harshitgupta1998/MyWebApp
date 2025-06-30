@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Manage Users</title>
@@ -11,7 +12,10 @@
         <h1>Manage Users </h1>
     </div>
     <div class="h3">
-        <a class="h3" href="@{/users/new}">Add New User</a>
+        <a th:href="@{/users/new}">Add User</a>
+    </div>
+    <div th:if="${message}" class="alert-success text-center">
+        [[${message}]]
     </div>
     <div>
         <table class="table table-bordered">
